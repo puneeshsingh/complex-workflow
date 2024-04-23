@@ -10,6 +10,7 @@ jobs:
     steps:
       - run : date
   macos:
+    needs: [ubuntu]
     runs-on: macos-latest
     steps:
       - run : date
